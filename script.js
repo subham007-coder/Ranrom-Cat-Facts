@@ -11,6 +11,7 @@ async function getRquest(){
         result.innerHTML += `${res.data.fact} <br> <br>`;
     } catch (err) {
         console.log(`Error is ${err}`);
+        result.innerHTML = `<h1>Page Not Found</h1>${err}`;
     }
 }
 
